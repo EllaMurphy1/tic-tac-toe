@@ -2,6 +2,21 @@ console.log('Hello')
 
 let turn = "X";
 
-let btn = document.querySelector('button');
-btn.innerText = turn;
-console.log(btn)
+let buttons = document.querySelectorAll('button')
+
+for (let i = 0; i<buttons.length; i++) {
+console.log(i)
+buttons[i].addEventListener('click', play)
+}
+
+function play(e) {
+    console.log(e.target);
+    e.target.innerText = turn; 
+    if (turn == "X") {
+        turn = "0";
+    } else {
+        turn = "X";
+    }
+}
+
+console.log(buttons)

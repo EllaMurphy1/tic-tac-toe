@@ -1,0 +1,13 @@
+body {
+    background-color:#898787;
+   /* border: yellow 5px solid; */
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    font-size: 42px;
+    padding: 30px;
+}

@@ -10,4 +10,10 @@ body {
 button {
     font-size: 42px;
     padding: 30px;
+    margin: 5px;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
